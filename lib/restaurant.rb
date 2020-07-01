@@ -8,5 +8,13 @@ class Restaurant
     @dishes = []
   end
 
+  def closing_time(hours)
+    closing = @opening_time.to_i + hours
+    closing.to_s + ":00"
+  end
+
+  def add_dish(dish)
+    @dishes << dish
+  end
 
 end
